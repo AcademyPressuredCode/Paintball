@@ -11,13 +11,13 @@ public class PlayerControl : MonoBehaviour
 	private Vector2 adjustment;
 	private Rigidbody2D rigidbodyComponent;
 	SpriteRenderer sprRenderer;
-	Animator anim;
+	Animator Player;
 
 	bool WalkIsTrue;
 
 	void Start() {
 		sprRenderer = GetComponent<SpriteRenderer> ();
-		anim = gameObject.GetComponent<Animator> ();
+		Player = gameObject.GetComponent<Animator> ();
 		WalkIsTrue = false;
 	}
 
@@ -26,20 +26,22 @@ public class PlayerControl : MonoBehaviour
 		float horizontalInput = Input.GetAxis("Horizontal");
 		float verticalInput = Input.GetAxis("Vertical");
 
-		if (Input.GetKeyDown ("a")) {
+		if (Input.GetKey (KeyCode.A)) {
 			sprRenderer.flipX = false;
-			WalkIsTrue = true;
-		} else if (Input.GetKeyDown ("d")) {
+		} else if (Input.GetKey (KeyCode.D)) {
 			sprRenderer.flipX = true;
+		}
+
+		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.S)) {
 			WalkIsTrue = true;
 		} else {
 			WalkIsTrue = false;
 		}
 
 		if (WalkIsTrue == false) {
-			anim.SetBool ("WalkIsTrue", false);
+			Player.SetBool ("WalkIsTrue", false);
 		} else if (WalkIsTrue == true) {
-			anim.SetBool ("WalkIsTrue", true);
+			Player.SetBool ("WalkIsTrue", true);
 		}
 
 		adjustment = new Vector2(speed.x * horizontalInput, speed.y * verticalInput);
