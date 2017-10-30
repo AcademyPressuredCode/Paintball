@@ -729,8 +729,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c73130737547a4884b5381a7ab7bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisPosition: {x: 0, y: 0, z: 0}
-  playerPosition: {fileID: 1490593206}
 --- !u!1 &376144826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,8 +2987,9 @@ GameObject:
   - component: {fileID: 1490593209}
   - component: {fileID: 1490593208}
   - component: {fileID: 1490593210}
+  - component: {fileID: 1490593212}
   m_Layer: 0
-  m_Name: NerpWalkL x5
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3046,7 +3045,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 1.6, y: 1.6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -3084,19 +3083,19 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.012346983, y: 0.10375476}
+  m_Offset: {x: -0.03023541, y: 0.010847807}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 6.4}
+    oldSize: {x: 1.05, y: 1.2}
     newSize: {x: 1.6, y: 1.6}
     adaptiveTilingThreshold: 0.5
-    drawMode: 2
+    drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7356887, y: 1.5005169}
-  m_EdgeRadius: 0.15
+  m_Size: {x: 1.0376368, y: 1.2372799}
+  m_EdgeRadius: 0
 --- !u!114 &1490593210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3109,6 +3108,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 5, y: 5}
+--- !u!95 &1490593212
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1490593205}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9036800215fe2ef49ae885e9ac679963, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1497699001
 GameObject:
   m_ObjectHideFlags: 0
