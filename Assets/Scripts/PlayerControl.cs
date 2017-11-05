@@ -5,14 +5,13 @@ using UnityEngine;
 //Player controls for on the field.
 public class PlayerControl : MonoBehaviour
 {
-
+	public GunController theGun;
 	public Vector2 speed = new Vector2(50, 50);
 
 	private Vector2 adjustment;
 	private Rigidbody2D rigidbodyComponent;
 	SpriteRenderer sprRenderer;
 	Animator Player;
-
 	bool WalkIsTrue;
 
 	void Start() {
@@ -45,6 +44,10 @@ public class PlayerControl : MonoBehaviour
 		}
 
 		adjustment = new Vector2(speed.x * horizontalInput, speed.y * verticalInput);
+		if (Input.GetMouseButtonDown (0))
+			theGun.isFireing = true;
+		if (Input.GetMouseButtonUp (0))
+			theGun.isFireing = false;
 	}
 
 	void FixedUpdate() {
