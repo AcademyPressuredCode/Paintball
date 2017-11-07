@@ -5,7 +5,6 @@ using UnityEngine;
 //Player controls for on the field.
 public class PlayerControl : MonoBehaviour
 {
-	public GunController theGun;
 	public Vector2 speed = new Vector2(50, 50);
 
 	private Vector2 adjustment;
@@ -22,8 +21,8 @@ public class PlayerControl : MonoBehaviour
 
 	void Update() {
 
-		float horizontalInput = Input.GetAxis("Horizontal");
-		float verticalInput = Input.GetAxis("Vertical");
+		float horizontalInput = Input.GetAxis ("Horizontal");
+		float verticalInput = Input.GetAxis ("Vertical");
 
 		if (Input.GetKey (KeyCode.A)) {
 			sprRenderer.flipX = false;
@@ -43,11 +42,8 @@ public class PlayerControl : MonoBehaviour
 			Player.SetBool ("WalkIsTrue", true);
 		}
 
-		adjustment = new Vector2(speed.x * horizontalInput, speed.y * verticalInput);
-		if (Input.GetMouseButtonDown (0))
-			theGun.isFireing = true;
-		if (Input.GetMouseButtonUp (0))
-			theGun.isFireing = false;
+		adjustment = new Vector2 (speed.x * horizontalInput, speed.y * verticalInput);
+
 	}
 
 	void FixedUpdate() {
