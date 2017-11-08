@@ -15,11 +15,9 @@ public class BulletScript : MonoBehaviour {
 		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 		// Calculate the bullet direction
-		bulletDir = ((Vector2)Player.transform.position - mousePos).normalized;
-
+		bulletDir = (mousePos - (Vector2)Player.transform.position).normalized;
 
 	}
-
 	void Update () {
 		if (bulletDir != Vector2.zero)
 			transform.Translate (bulletDir * speed * Time.deltaTime);

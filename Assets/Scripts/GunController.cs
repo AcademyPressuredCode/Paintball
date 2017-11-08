@@ -11,7 +11,8 @@ public class GunController : MonoBehaviour {
 	void Update () {
 		
 		if (Input.GetMouseButtonDown (0) && restTimer == 0) {
-			Instantiate (bullet, Player.position, Player.rotation);
+			GameObject bulletSpawn = Instantiate (bullet, Player.position, Quaternion.identity);
+			bulletSpawn.GetComponent<BulletScript>().Player = gameObject;
 		}
 
 	}
