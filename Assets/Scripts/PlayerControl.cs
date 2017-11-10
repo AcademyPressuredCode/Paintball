@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,9 +10,8 @@ public class PlayerControl : MonoBehaviour
 	private Vector2 adjustment;
 	private Rigidbody2D rigidbodyComponent;
 	SpriteRenderer sprRenderer;
+
 	void Start() {
-		print(speed);
-	
 		sprRenderer = GetComponent<SpriteRenderer> ();
 	}
 
