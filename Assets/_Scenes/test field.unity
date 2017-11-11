@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 1034116999}
   - component: {fileID: 1034116998}
   - component: {fileID: 1034117000}
+  - component: {fileID: 1034117001}
   m_Layer: 0
   m_Name: Toasterman
   m_TagString: Untagged
@@ -520,7 +521,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa1294a3a3dbaf4884f9e93ce8f363a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1956428333668946, guid: f7663f20e902948f9b9fdd36acc5769d, type: 2}
+  toastBullet: {fileID: 1171202217043330, guid: 52796a621662c4f4091ccd49e6bf32a3,
+    type: 2}
   Player: {fileID: 1034116997}
   restTimer: 0
 --- !u!114 &1034116999
@@ -555,6 +557,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1034117001
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034116993}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1584e4da367d45842a68d3d6209582df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &1081354011 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4765545972360500, guid: 83992c0d0b6a233478fe044cbb4b0744,
