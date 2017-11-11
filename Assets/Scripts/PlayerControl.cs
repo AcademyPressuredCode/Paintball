@@ -1,53 +1,39 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 //Player controls for on the field.
 public class PlayerControl : MonoBehaviour
 {
-	public GunController theGun;
 	public Vector2 speed = new Vector2(50, 50);
 
+	Vector2 PlayerPos;
 	private Vector2 adjustment;
 	private Rigidbody2D rigidbodyComponent;
 	SpriteRenderer sprRenderer;
-	Animator Player;
-	bool WalkIsTrue;
+
 
 	void Start() {
 		sprRenderer = GetComponent<SpriteRenderer> ();
-		Player = gameObject.GetComponent<Animator> ();
-		WalkIsTrue = false;
 	}
 
 	void Update() {
+		//Find Mouse Position
+		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		Vector2 AB = mousePos - PlayerPos;
 
-		float horizontalInput = Input.GetAxis("Horizontal");
-		float verticalInput = Input.GetAxis("Vertical");
+		//Find the angle from the player position in Radians
+		float angle = Mathf.Atan2 (AB.y, AB.x);
 
-		if (Input.GetKey (KeyCode.A)) {
-			sprRenderer.flipX = false;
-		} else if (Input.GetKey (KeyCode.D)) {
-			sprRenderer.flipX = true;
-		}
+		//Adjust to Degrees
+		float deg = angle * Mathf.Rad2Deg;
+		Debug.Log ("Radians: " + angle + " Degree: " + deg);
 
-		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.S)) {
-			WalkIsTrue = true;
-		} else {
-			WalkIsTrue = false;
-		}
+		float horizontalInput = Input.GetAxis ("Horizontal");
+		float verticalInput = Input.GetAxis ("Vertical");
+	
+		adjustment = new Vector2 (speed.x * horizontalInput, speed.y * verticalInput);
 
-		if (WalkIsTrue == false) {
-			Player.SetBool ("WalkIsTrue", false);
-		} else if (WalkIsTrue == true) {
-			Player.SetBool ("WalkIsTrue", true);
-		}
-
-		adjustment = new Vector2(speed.x * horizontalInput, speed.y * verticalInput);
-		if (Input.GetMouseButtonDown (0))
-			theGun.isFireing = true;
-		if (Input.GetMouseButtonUp (0))
-			theGun.isFireing = false;
 	}
 
 	void FixedUpdate() {
