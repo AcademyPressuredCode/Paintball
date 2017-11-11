@@ -50,3 +50,9 @@ TagManager:
   - name: Character
     uniqueID: 3643645853
     locked: 0
+  - name: Gun
+    uniqueID: 20240959
+    locked: 0
+  - name: bullet
+    uniqueID: 3220348617
+    locked: 0
