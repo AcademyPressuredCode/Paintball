@@ -56,3 +56,6 @@ TagManager:
   - name: bullet
     uniqueID: 3220348617
     locked: 0
+  - name: trail
+    uniqueID: 2024953759
+    locked: 0
