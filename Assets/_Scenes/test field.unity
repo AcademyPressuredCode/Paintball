@@ -296,7 +296,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.40095156, g: 0.5395521, b: 0.75735295, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -305,7 +305,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 28
   orthographic: 1
   orthographic size: 5
   m_Depth: -1
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toastBullet: {fileID: 1171202217043330, guid: 52796a621662c4f4091ccd49e6bf32a3,
     type: 2}
-  Player: {fileID: 536692522}
+  Gun: {fileID: 1915960952}
   restTimer: 0
 --- !u!114 &1034116999
 MonoBehaviour:
