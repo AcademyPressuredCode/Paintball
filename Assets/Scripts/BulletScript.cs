@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletScript : MonoBehaviour {
-
-	public float speed = 25f;
+	public float lifetime;
+	public float speed = 50f;
 	public GameObject Gun;
 	private Vector2 bulletDir = Vector2.zero;
 
@@ -21,6 +21,9 @@ public class BulletScript : MonoBehaviour {
 	void Update () {
 		if (bulletDir != Vector2.zero)
 			transform.Translate (bulletDir * speed * Time.deltaTime);
+		lifetime -= Time.deltaTime;
+		if (lifetime <= 0) {
+			Destroy(gameObject);
+		}
 	}
-
-}
+	}
