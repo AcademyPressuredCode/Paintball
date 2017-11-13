@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paintball", "Assembly-CSharp.csproj", "{D7613C0A-118C-7A2A-2FCC-B615DB848F85}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paintball", "Paintball.csproj", "{B38FD067-2131-F8E2-EB28-8E1CD5402F8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D7613C0A-118C-7A2A-2FCC-B615DB848F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7613C0A-118C-7A2A-2FCC-B615DB848F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7613C0A-118C-7A2A-2FCC-B615DB848F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7613C0A-118C-7A2A-2FCC-B615DB848F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38FD067-2131-F8E2-EB28-8E1CD5402F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38FD067-2131-F8E2-EB28-8E1CD5402F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38FD067-2131-F8E2-EB28-8E1CD5402F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38FD067-2131-F8E2-EB28-8E1CD5402F8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

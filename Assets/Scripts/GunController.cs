@@ -5,14 +5,14 @@ using UnityEngine;
 public class GunController : MonoBehaviour {
 
 	public GameObject toastBullet;
-	public Transform Player;
+	public GameObject Gun;
 	public int restTimer;
 
 	void Update () {
 		
 		if (Input.GetMouseButtonDown (0) && restTimer == 0) {
-			GameObject bulletSpawn = Instantiate (toastBullet, Player.position, Quaternion.identity);
-			bulletSpawn.GetComponent<BulletScript>().Player = gameObject;
+			GameObject bulletSpawn = Instantiate (toastBullet, Gun.transform.position, Quaternion.identity);
+			bulletSpawn.GetComponent<BulletScript>().Gun = gameObject;
 		}
 
 	}
