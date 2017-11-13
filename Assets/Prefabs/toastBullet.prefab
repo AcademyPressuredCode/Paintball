@@ -22,8 +22,7 @@ GameObject:
   - component: {fileID: 212894383113412702}
   - component: {fileID: 61242671615279856}
   - component: {fileID: 114258469664695550}
-  - component: {fileID: 114781329648463322}
-
+  - component: {fileID: 50532549641600342}
   m_Layer: 0
   m_Name: toastBullet
   m_TagString: Untagged
@@ -47,7 +46,7 @@ Transform:
 --- !u!50 &50532549641600342
 Rigidbody2D:
   serializedVersion: 4
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1171202217043330}
@@ -63,7 +62,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61242671615279856
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -89,9 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13007301, y: 0.16028327}
   m_EdgeRadius: 0
-
 --- !u!114 &114258469664695550
-
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,23 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520b268a730d7284bbb757bc02a5c5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-
+  lifetime: 1
   speed: 7
   Gun: {fileID: 1183743240688544, guid: 916cc418c2b4a432aa8aec9d280755c5, type: 2}
---- !u!114 &114781329648463322
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1171202217043330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce9a406fef74548468ee34bb4d47d9a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifetime: 1
-
-  
 --- !u!212 &212894383113412702
 SpriteRenderer:
   m_ObjectHideFlags: 1
