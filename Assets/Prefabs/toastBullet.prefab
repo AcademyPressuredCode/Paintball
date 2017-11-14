@@ -20,13 +20,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4279020783187166}
   - component: {fileID: 212894383113412702}
+  - component: {fileID: 114898488664542750}
   - component: {fileID: 61242671615279856}
-  - component: {fileID: 114413718507731918}
-  - component: {fileID: 114258469664695550}
   - component: {fileID: 50532549641600342}
+  - component: {fileID: 114141752026538202}
   m_Layer: 0
   m_Name: toastBullet
-  m_TagString: pew
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1171202217043330}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -2.0856943, y: 0.4010084, z: 0.08848994}
+  m_LocalPosition: {x: -0.20029348, y: -0.93940526, z: 0.08848994}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -47,7 +47,7 @@ Transform:
 --- !u!50 &50532549641600342
 Rigidbody2D:
   serializedVersion: 4
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1171202217043330}
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &61242671615279856
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -76,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00032496452, y: 0.00044590235}
+  m_Offset: {x: 0.00032496452, y: 0.001366321}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -87,24 +87,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13007301, y: 0.1621241}
+  m_Size: {x: 0.13007301, y: 0.16028327}
   m_EdgeRadius: 0
---- !u!114 &114258469664695550
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1171202217043330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 520b268a730d7284bbb757bc02a5c5ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifetime: 1
-  speed: 7
-  Gun: {fileID: 1183743240688544, guid: 916cc418c2b4a432aa8aec9d280755c5, type: 2}
-<<<<<<< HEAD
---- !u!114 &114413718507731918
+--- !u!114 &114141752026538202
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -115,8 +100,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d599115160145b7b236ba7f7246315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> b287f23c570ccb4ddb291390e51ff2fb66af591f
+--- !u!114 &114898488664542750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171202217043330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520b268a730d7284bbb757bc02a5c5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 3.5
+  speed: 25
+  Player: {fileID: 0}
 --- !u!212 &212894383113412702
 SpriteRenderer:
   m_ObjectHideFlags: 1
