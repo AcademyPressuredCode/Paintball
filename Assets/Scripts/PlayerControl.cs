@@ -18,8 +18,8 @@ public class PlayerControl : MonoBehaviour
 	}
 
 	void Update() {
-		//Find Mouse Position
-		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //Find Mouse Position
+        Vector2 mousePos = Input.mousePosition;
 		Vector2 AB = mousePos - PlayerPos;
 
 		//Find the angle from the player position in Radians
