@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour {
 	public float lifetime;
 	public float speed = 50f;
-	public GameObject Gun;
+	public GameObject Player;
 	private Vector2 bulletDir = Vector2.zero;
 
 
@@ -15,7 +15,7 @@ public class BulletScript : MonoBehaviour {
 		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 		// Calculate the bullet direction
-		bulletDir = (mousePos - (Vector2)Gun.transform.position);
+		bulletDir = (mousePos - (Vector2)Player.transform.position).normalized;
 
 	}
 	void Update () {
