@@ -9,7 +9,20 @@ public class BulletScript : MonoBehaviour {
 	private Vector2 bulletDir = Vector2.zero;
 
 
-	void Start () {
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject != null)
+        {
+            Debug.Log(col.gameObject);
+            if (col.gameObject.tag == "Wall")
+            {
+                Destroy(col.gameObject);
+                Destroy(this.gameObject);
+            }
+        }
+    }
+
+    void Start () {
 		
 		// Get the current mouse position
 		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -21,9 +34,12 @@ public class BulletScript : MonoBehaviour {
 	void Update () {
 		if (bulletDir != Vector2.zero)
 			transform.Translate (bulletDir * speed * Time.deltaTime);
-		lifetime -= Time.deltaTime;
-		if (lifetime <= 0) {
-			Destroy(gameObject);
-		}
+			lifetime -= Time.deltaTime;
+
+			if (lifetime <= 0) {
+				Destroy(gameObject);
+			}
+			
+
 	}
-	}
+}
