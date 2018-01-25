@@ -18,10 +18,10 @@ public class PlayerControl : MonoBehaviour
 	
 		adjustment = new Vector2 (speed.x * horizontalInput, speed.y * verticalInput);
 
-        if (Input.GetKeyUp(Keycode.Escape)
-{
+        if (Input.GetKeyUp(KeyCode.Escape)) {
             GUI.SetActive(!GUI.activeSelf);
         }
+
     }
 
 	void FixedUpdate() {
