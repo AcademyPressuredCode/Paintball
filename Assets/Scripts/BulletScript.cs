@@ -9,7 +9,7 @@ public class BulletScript : MonoBehaviour {
 	private Vector2 bulletDir = Vector2.zero;
 
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject != null)
         {
