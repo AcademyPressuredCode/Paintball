@@ -37,7 +37,7 @@ public class BulletScript : MonoBehaviour {
 	}
 	void Update () {
 		if (bulletDir != Vector2.zero)
-			transform.Translate (bulletDir * speed * Time.deltaTime);
+			transform.Translate (bulletDir.normalized * speed * Time.deltaTime);
 			lifetime -= Time.deltaTime;
 
 			if (lifetime <= 0) {
