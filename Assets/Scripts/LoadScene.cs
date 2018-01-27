@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadScene : MonoBehaviour {
+public class LoadScene : MonoBehaviour
+{
 
-    static public string Weapon = "pistol";
-
-	public void LoadUnityScene(string sceneName) {
-		SceneManager.LoadScene(sceneName);
-	}
-
-    private void Start()
+    public void LoadUnityScene(string sceneName)
     {
-        Messenger.Broadcast<string>("Weapon Type", Weapon);
+        SceneManager.LoadScene(sceneName);
     }
+
 }

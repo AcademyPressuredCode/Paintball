@@ -6,8 +6,8 @@ public class BulletScript : MonoBehaviour {
 	public float lifetime;
 	public float speed = 50f;
 	public GameObject Gun;
+    public string WeaponType;
 
-    private string cachedWeapon;
 	private Vector2 bulletDir = Vector2.zero;
 
 
@@ -28,19 +28,17 @@ public class BulletScript : MonoBehaviour {
         }
     }
 
-    void recieveWeaponType (string Weapon)
-    {
-        cachedWeapon = Weapon;
-        Debug.Log(Weapon);
-    }
-
     void Start () {
-		
-		// Get the current mouse position
+
+        Debug.Log(PlayerPrefs.GetString("Weapon").ToString());
+        
+        // Get the current mouse position
 		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 		// Calculate the bullet direction
 		bulletDir = (mousePos - (Vector2)Gun.transform.position);
+
+
 
 	}
 	void Update () {
