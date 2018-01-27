@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletScript : MonoBehaviour {
-	private float lifetime;
+	private double lifetime;
 	private float speed;
+    private Vector2 bulletDir = Vector2.zero;
 
     public GameObject Gun;
-    public string WeaponType;
-
-	private Vector2 bulletDir = Vector2.zero;
-
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -31,6 +28,11 @@ public class BulletScript : MonoBehaviour {
 
     void Start () {
 
+        if (PlayerPrefs.HasKey("Weapon") == false)
+        {
+            PlayerPrefs.SetString("Weapon", "Pistol");
+        }
+
         if (PlayerPrefs.GetString("Weapon") == "Pistol")
         {
             speed = 14f;
@@ -42,10 +44,10 @@ public class BulletScript : MonoBehaviour {
 
         if (PlayerPrefs.GetString("Weapon") == "Pistol")
         {
-            lifetime = 1;
+            lifetime = 0.5;
         } else if (PlayerPrefs.GetString("Weapon") == "Rifle")
         {
-            lifetime = 2;
+            lifetime = 1.5;
         }
 
         Debug.Log(PlayerPrefs.GetString("Weapon").ToString());
