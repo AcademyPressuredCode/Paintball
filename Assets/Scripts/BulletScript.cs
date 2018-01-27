@@ -6,6 +6,8 @@ public class BulletScript : MonoBehaviour {
 	public float lifetime;
 	public float speed = 50f;
 	public GameObject Gun;
+
+    private string cachedWeapon;
 	private Vector2 bulletDir = Vector2.zero;
 
 
@@ -26,6 +28,12 @@ public class BulletScript : MonoBehaviour {
         }
     }
 
+    void recieveWeaponType (string Weapon)
+    {
+        cachedWeapon = Weapon;
+        Debug.Log(Weapon);
+    }
+
     void Start () {
 		
 		// Get the current mouse position
@@ -38,6 +46,7 @@ public class BulletScript : MonoBehaviour {
 	void Update () {
 		if (bulletDir != Vector2.zero)
 			transform.Translate (bulletDir.normalized * speed * Time.deltaTime);
+
 			lifetime -= Time.deltaTime;
 
 			if (lifetime <= 0) {
