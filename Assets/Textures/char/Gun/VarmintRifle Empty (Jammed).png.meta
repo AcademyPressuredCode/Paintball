@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: e0c28218f30763946b5c7233ddd3037c
-timeCreated: 1510425563
+guid: 291607e8d1dc427419fa55c081530529
+timeCreated: 1517169835
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Sidearm_0
-    21300002: Sidearm_1
-    21300004: Sidearm_2
-    21300006: Sidearm_3
-    21300008: Sidearm_4
-    21300010: Sidearm_5
-    21300012: Sidearm_6
-    21300014: Sidearm_7
-    21300016: Sidearm_8
-    21300018: Sidearm_9
-    21300020: Sidearm_10
+    21300000: VarmintRifle Empty (Jammed)_0
+    21300002: VarmintRifle Empty (Jammed)_1
+    21300004: VarmintRifle Empty (Jammed)_2
+    21300006: VarmintRifle Empty (Jammed)_3
+    21300008: VarmintRifle Empty (Jammed)_4
+    21300010: VarmintRifle Empty (Jammed)_5
+    21300012: VarmintRifle Empty (Jammed)_6
+    21300014: VarmintRifle Empty (Jammed)_7
+    21300016: VarmintRifle Empty (Jammed)_8
+    21300018: VarmintRifle Empty (Jammed)_9
+    21300020: VarmintRifle Empty (Jammed)_10
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sidearm_0
+      name: VarmintRifle Empty (Jammed)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -106,13 +106,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_1
+      name: VarmintRifle Empty (Jammed)_1
       rect:
         serializedVersion: 2
         x: 0
@@ -120,13 +120,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_2
+      name: VarmintRifle Empty (Jammed)_2
       rect:
         serializedVersion: 2
         x: 0
@@ -134,13 +134,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_3
+      name: VarmintRifle Empty (Jammed)_3
       rect:
         serializedVersion: 2
         x: 0
@@ -148,13 +148,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_4
+      name: VarmintRifle Empty (Jammed)_4
       rect:
         serializedVersion: 2
         x: 0
@@ -162,13 +162,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_5
+      name: VarmintRifle Empty (Jammed)_5
       rect:
         serializedVersion: 2
         x: 0
@@ -176,13 +176,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_6
+      name: VarmintRifle Empty (Jammed)_6
       rect:
         serializedVersion: 2
         x: 0
@@ -190,13 +190,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_7
+      name: VarmintRifle Empty (Jammed)_7
       rect:
         serializedVersion: 2
         x: 0
@@ -204,13 +204,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_8
+      name: VarmintRifle Empty (Jammed)_8
       rect:
         serializedVersion: 2
         x: 0
@@ -218,13 +218,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_9
+      name: VarmintRifle Empty (Jammed)_9
       rect:
         serializedVersion: 2
         x: 0
@@ -232,13 +232,13 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Sidearm_10
+      name: VarmintRifle Empty (Jammed)_10
       rect:
         serializedVersion: 2
         x: 0
@@ -246,7 +246,7 @@ TextureImporter:
         width: 160
         height: 160
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
