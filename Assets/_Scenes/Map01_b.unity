@@ -685,6 +685,11 @@ Prefab:
       propertyPath: GUI
       value: 
       objectReference: {fileID: 1538362071}
+    - target: {fileID: 114077444778186168, guid: aba83bba315be1042b4c031280f177f8,
+        type: 2}
+      propertyPath: cooldown
+      value: 
+      objectReference: {fileID: 2026591763}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aba83bba315be1042b4c031280f177f8, type: 2}
   m_IsPrefabParent: 0
@@ -2090,6 +2095,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6047617252c9cc24a80a8848d171f6d6, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &2026591763 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114885114715591306, guid: 807336f82f4988d4c860c4e88e2792c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1242398631}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!4 &2045381167 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4738808447556298, guid: 6047617252c9cc24a80a8848d171f6d6,
