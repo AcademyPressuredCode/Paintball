@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunController : MonoBehaviour {
 
 	public GameObject toastBullet;
 	public GameObject Gun;
-	public int restTimer = 0;
+	public float restTimer = 0;
+    public Image cooldown;
 
 	void Update () {
 
@@ -23,6 +25,9 @@ public class GunController : MonoBehaviour {
             }
 
 		}
+
+        cooldown.fillAmount = restTimer / 100;
+        Debug.Log("RestTimer: " + restTimer / 100);
 
 	}
 
