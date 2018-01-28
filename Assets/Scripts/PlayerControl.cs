@@ -7,9 +7,11 @@ public class PlayerControl : MonoBehaviour
 {
     public GameObject GUI;
     public Vector2 speed = new Vector2(50, 50);
-	private Vector2 adjustment;
+
+    private Vector2 adjustment;
 	private Rigidbody2D rigidbodyComponent;
     private bool GUIon;
+    public SpriteRenderer Player;
     
 
 	void Update() {
@@ -20,6 +22,13 @@ public class PlayerControl : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Escape)) {
             GUI.SetActive(!GUI.activeSelf);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            Player.flipX = true;
+        } else if (Input.GetKey(KeyCode.D)){
+            Player.flipX = false;
         }
 
     }
