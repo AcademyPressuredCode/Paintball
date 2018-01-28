@@ -9,44 +9,44 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1347270388804758}
+  m_RootGameObject: {fileID: 1412678702248462}
   m_IsPrefabParent: 1
---- !u!1 &1347270388804758
+--- !u!1 &1412678702248462
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4566436839338272}
-  - component: {fileID: 61368918734366634}
-  - component: {fileID: 212126449493899230}
+  - component: {fileID: 4874635920360914}
+  - component: {fileID: 212730205365055608}
+  - component: {fileID: 68788623725919720}
   m_Layer: 0
   m_Name: Triangle Barrier
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4566436839338272
+--- !u!4 &4874635920360914
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1347270388804758}
+  m_GameObject: {fileID: 1412678702248462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.47, y: 7.94, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 1}
+  m_LocalPosition: {x: 23.41, y: 10.44, z: 0.07709447}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61368918734366634
-BoxCollider2D:
+--- !u!68 &68788623725919720
+EdgeCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1347270388804758}
+  m_GameObject: {fileID: 1412678702248462}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -54,24 +54,19 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.32}
-    newSize: {x: 0.16, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!212 &212126449493899230
+  m_Points:
+  - {x: -0.005357838, y: 0.1629684}
+  - {x: 0.08330756, y: -0.12397754}
+  - {x: -0.006177044, y: -0.16572575}
+  - {x: -0.08832665, y: -0.11875611}
+  - {x: -0.007082367, y: 0.15799236}
+--- !u!212 &212730205365055608
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1347270388804758}
+  m_GameObject: {fileID: 1412678702248462}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

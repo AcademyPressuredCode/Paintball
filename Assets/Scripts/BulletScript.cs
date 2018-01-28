@@ -14,7 +14,7 @@ public class BulletScript : MonoBehaviour {
         if (col.gameObject != null)
         {
             Debug.Log(col.gameObject);
-            if (col.gameObject.tag == "Player")
+            if (col.gameObject.tag == "Enemy")
             {
                 Destroy(col.gameObject);
                 Destroy(this.gameObject);

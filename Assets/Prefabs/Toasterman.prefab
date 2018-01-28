@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 50619773056797024}
   m_Layer: 0
   m_Name: Toasterman
-  m_TagString: Untagged
+  m_TagString: Ally
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,6 +289,7 @@ MonoBehaviour:
     type: 2}
   Gun: {fileID: 1656428456700190}
   restTimer: 0
+  cooldown: {fileID: 0}
 --- !u!114 &114945444775671196
 MonoBehaviour:
   m_ObjectHideFlags: 1

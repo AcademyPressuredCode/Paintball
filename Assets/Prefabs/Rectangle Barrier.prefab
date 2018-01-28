@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61682714296844718}
   m_Layer: 0
   m_Name: Rectangle Barrier
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
