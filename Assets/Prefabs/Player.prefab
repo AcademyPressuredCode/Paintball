@@ -92,7 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1736634161982346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.26466, y: -133.32896, z: 3.7425573}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children:
   - {fileID: 4785794202613320}
@@ -339,9 +339,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GUI: {fileID: 0}
+  RiflePrefab: {fileID: 0}
+  PistolPrefab: {fileID: 0}
   speed: {x: 7, y: 7}
   anim: {fileID: 95079277140668806}
-  Player: {fileID: 212213541741439122}
+  PlayerSprite: {fileID: 0}
+  Weapon: {fileID: 0}
 --- !u!124 &124951530647271450
 Behaviour:
   m_ObjectHideFlags: 1

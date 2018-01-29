@@ -6,28 +6,33 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {   // ALL THE VARIABLES, PRIVATE *AND* PUBLIC
     public GameObject GUI;
+    public GameObject RiflePrefab;
+    public GameObject PistolPrefab;
+    private GameObject Rifle;
+    private GameObject Pistol;
+    private Vector2 adjustment;
     public Vector2 speed = new Vector2(50, 50);
     public Animator anim;
-    private Vector2 adjustment;
 	private Rigidbody2D rigidbodyComponent;
     private bool GUIon;
     public SpriteRenderer PlayerSprite;
-    public GameObject RiflePrefab;
-    public GameObject PistolPrefab;
+    public SpriteRenderer Weapon;
 
     void Start()
     {
         if (PlayerPrefs.GetString("Weapon") == "Rifle")
         {
-            GameObject Rifle = Instantiate(RiflePrefab);
+            Rifle = Instantiate(RiflePrefab);
             Rifle.transform.position = this.transform.position;
             Rifle.transform.parent = this.transform;
+            Rifle.transform.Translate(-0.2f, -0.2f, 0);
         }
         else if (PlayerPrefs.GetString("Weapon") == "Pistol")
         {
-            GameObject Pistol = Instantiate(PistolPrefab);
-            Pistol.transform.position = this.transform.position; 
+            Pistol = Instantiate(PistolPrefab);
+            Pistol.transform.position = this.transform.position;
             Pistol.transform.parent = this.transform;
+            Pistol.transform.Translate(-0.2f, -0.2f, 0f);
         }
  
     }
@@ -50,8 +55,10 @@ public class PlayerControl : MonoBehaviour
         {
             PlayerSprite.flipX = true;
             anim.SetBool("Walking", true);
+            Weapon.flipX = false;
         } else if (Input.GetKey(KeyCode.D)) {
             PlayerSprite.flipX = false;
+            Weapon.flipX = true;
             anim.SetBool("Walking", true);
         } else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.W))
         {

@@ -1094,12 +1094,12 @@ Prefab:
     - target: {fileID: 224185590512316786, guid: 807336f82f4988d4c860c4e88e2792c5,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 319.5
+      value: 478.5
       objectReference: {fileID: 0}
     - target: {fileID: 224185590512316786, guid: 807336f82f4988d4c860c4e88e2792c5,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 176
+      value: 204
       objectReference: {fileID: 0}
     - target: {fileID: 224185590512316786, guid: 807336f82f4988d4c860c4e88e2792c5,
         type: 2}
@@ -1644,7 +1644,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625389450}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.26466, y: -133.32896, z: 3.7425573}
+  m_LocalPosition: {x: -14.6, y: -117.1, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children:
   - {fileID: 1388672378}
@@ -1755,13 +1755,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GUI: {fileID: 1119345723}
+  RiflePrefab: {fileID: 1357041510271978, guid: c600996087caa104cbe8ea92e52d3d98,
+    type: 2}
+  PistolPrefab: {fileID: 1357041510271978, guid: c600996087caa104cbe8ea92e52d3d98,
+    type: 2}
   speed: {x: 7, y: 7}
   anim: {fileID: 1625389454}
   PlayerSprite: {fileID: 1625389458}
-  Weapon: {fileID: 0}
-  Rifle: {fileID: 1357041510271978, guid: c600996087caa104cbe8ea92e52d3d98, type: 2}
-  Pistol: {fileID: 1357041510271978, guid: c600996087caa104cbe8ea92e52d3d98, type: 2}
-  Player: {fileID: 1625389451}
+  Weapon: {fileID: 212461393891275954, guid: c600996087caa104cbe8ea92e52d3d98, type: 2}
 --- !u!114 &1625389457
 MonoBehaviour:
   m_ObjectHideFlags: 0
