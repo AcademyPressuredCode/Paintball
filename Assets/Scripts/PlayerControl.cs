@@ -11,7 +11,26 @@ public class PlayerControl : MonoBehaviour
     private Vector2 adjustment;
 	private Rigidbody2D rigidbodyComponent;
     private bool GUIon;
-    public SpriteRenderer Player;
+    public SpriteRenderer PlayerSprite;
+    public GameObject RiflePrefab;
+    public GameObject PistolPrefab;
+
+    void Start()
+    {
+        if (PlayerPrefs.GetString("Weapon") == "Rifle")
+        {
+            GameObject Rifle = Instantiate(RiflePrefab);
+            Rifle.transform.position = this.transform.position;
+            Rifle.transform.parent = this.transform;
+        }
+        else if (PlayerPrefs.GetString("Weapon") == "Pistol")
+        {
+            GameObject Pistol = Instantiate(PistolPrefab);
+            Pistol.transform.position = this.transform.position; 
+            Pistol.transform.parent = this.transform;
+        }
+ 
+    }
 
 
     void Update() {
@@ -29,10 +48,10 @@ public class PlayerControl : MonoBehaviour
         //This bit decides whether or not to flip the character, and to play the running animation. It looks ugly atm, fixing later
         if (Input.GetKey(KeyCode.A))
         {
-            Player.flipX = true;
+            PlayerSprite.flipX = true;
             anim.SetBool("Walking", true);
         } else if (Input.GetKey(KeyCode.D)) {
-            Player.flipX = false;
+            PlayerSprite.flipX = false;
             anim.SetBool("Walking", true);
         } else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.W))
         {
