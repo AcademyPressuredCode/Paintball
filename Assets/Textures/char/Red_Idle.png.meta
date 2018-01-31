@@ -1,14 +1,13 @@
 fileFormatVersion: 2
-guid: 40d56f1a07c509a4ba328fb6abee603f
-timeCreated: 1510368273
+guid: 4be0abc7fae50614ea74bbe91073395d
+timeCreated: 1517362282
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Toasterman3_0
-    21300002: Toasterman3_1
-    21300004: Toasterman3_2
-    21300006: Toasterman3_3
-    21300008: Toasterman3_4
+    21300000: Red_Idle_0
+    21300002: Red_Idle_1
+    21300004: Red_Idle_2
+    21300006: Red_Idle_3
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -65,34 +64,37 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Toasterman3_0
+      name: Red_Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -106,7 +108,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Toasterman3_1
+      name: Red_Idle_1
       rect:
         serializedVersion: 2
         x: 0
@@ -120,7 +122,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Toasterman3_2
+      name: Red_Idle_2
       rect:
         serializedVersion: 2
         x: 0
@@ -134,7 +136,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Toasterman3_3
+      name: Red_Idle_3
       rect:
         serializedVersion: 2
         x: 0
