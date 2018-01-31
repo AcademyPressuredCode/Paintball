@@ -14,7 +14,7 @@ public class GunController : MonoBehaviour {
 	void Update () {
         //Is the mouse button down and rest set to zero?
 		if (Input.GetMouseButtonDown (0) && restTimer <= 0) { //Spawn your bullet
-			GameObject bulletSpawn = Instantiate (toastBullet, Gun.transform.position, Quaternion.identity);
+			GameObject bulletSpawn = Instantiate (toastBullet, new Vector2(Gun.transform.position.x + 0.2f, Gun.transform.position.y + 0.2f), Quaternion.identity);
 			bulletSpawn.GetComponent<BulletScript>().Gun = gameObject;
             anim.SetBool("Firing", true);
 
